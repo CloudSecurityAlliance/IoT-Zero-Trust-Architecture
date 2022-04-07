@@ -5,6 +5,7 @@ Any communication going from the HES is equally verifiable as data flowing in ei
 Pictured is a connection to an Authentication service, handling identities and managing secrets, such that the HES is able to communicate securely with any identifiable entity.
 
 
+![overview](https://user-images.githubusercontent.com/10893218/162294381-2a596144-c43c-4ae6-ae1c-22db65e37c01.png)
 
 
 Communication between a meter and a collector tends to be required in RF networks  (or some Power Line Communication networks), where the collector operates as an infrastructure gateway between the HES and the meter.
