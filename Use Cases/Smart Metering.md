@@ -12,6 +12,9 @@ Communication between a meter and a collector tends to be required in RF network
 The meter must not inherently trust the infrastructure but must be able to send and receive data from the HES. Applying ZTA, any packages sent are  protected, such that the HES - or the meter - is able to verify the sender and veracity of the information sent. This is continually done through an encrypted and signed SPA, verifying the sender, the traversed path, and the data.
 The collector is used by the HES, to identify network paths and create SDN maps to establish knowledge of the currently identified and valid network entities. This information is essential in early warning against network attacks and in creating and updating Asset and Infrastructure Awareness.
 
+
+![endpoint](https://user-images.githubusercontent.com/10893218/162297218-9ecde5f8-c997-4fd1-8a8f-1f75e4ffd4ab.png)
+
 At the hardware level, the meter - as an example - could also operate with the ZTA approach. A central Processing and Policy component validates connections from other components, based on their roles and authorizations. Connections and information sent should be validated each time - depending on the nature of the component - and any information leaving the meter must be protected, such that an intended receiver may be able to understand and validate the meter's  identity.
 
 
