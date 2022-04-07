@@ -23,7 +23,8 @@ ZT Principles should be applied to edge devices. Devices communication with the 
 
 ZT edge architecture requires that devices first authenticate to a network / resource using single packet authorization. Once authenticated and authorized, the appropriate IP-address/port is opened to allow data flow. 
 
-SPA_Data_Flow.png
+![SPA_Data_Flow](https://user-images.githubusercontent.com/10893218/162313867-9eb69255-4ec7-43b0-9283-7eda42d69ef4.png)
+
 
 The ability to open the correct port for an IP-address is policy driven. Organizations must have an understanding of the allowable communications/data flows within their systems in order to support this. 
 
@@ -32,7 +33,8 @@ ZTE 1: Map transactions flows to and from devices, applications and users in ord
 <h1>Single Packet Authorization</h1>
 For Zero Trust, authentication and authorization is  a must to ensure the security of the network. However, the unique characteristics of IoT networks result in an urgent need for simple and reliable authorization/authentication methods. 
 
-SPA_Packet_Format.png
+![SPA_Packet_Format](https://user-images.githubusercontent.com/10893218/162313933-fc9f1cdd-d161-48fb-b927-360dfa785032.png)
+
 
 The single packet will be the first thing sent to the network, and it will contain sequences for verification and request details, including access port, traffic information. If the network receives anything else, it could consider it as a possible attack. Also, once the single packet is verified, the authentication is completed, and the specific port will be open to the IP address which sent the single packet. This firewall and security policies will be configured, and a connection via traditional network protocols can be established. After a connection is established, all configuration is removed, and the port/service is hidden from all other devices. Without a  single packet, all services and ports are hidden to devices outside of the network. Furthermore, since the network does not respond to the single packet sender, it can mitigate DDOS attacks as all traffic is ignored and filtered before the single packet is verified and authenticated. Single packet authentication is based on RFC 4226, which is an HMAC based one-time password algorithm.
 
@@ -42,7 +44,8 @@ ZTE 3: Upon successful SPA transaction from a device, open the applicable IP-add
 <h2>ZT Policy Management and Enforcement</h2>
 One of the primary requirements for a ZTA implementation is that authentication occurs for each transaction. 
 
-onboarding_process.png
+![onboarding_process](https://user-images.githubusercontent.com/10893218/162314007-080a9190-4627-424c-bf26-53b7dcb0909d.png)
+
                                       
 Figure ?? - Onboarding (IdP Scenario)
 
